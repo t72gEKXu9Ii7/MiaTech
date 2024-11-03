@@ -2,190 +2,125 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
-    <title>La Mia Pagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di Esempio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        input[type="text"], input[type="email"], input[type="radio"], input[type="checkbox"] {
+            margin: 10px 0;
+        }
+        button {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1>Benvenuto nella mia pagina</h1>
-    <p>
-        Questo è un paragrafo di esempio.
-        Visita <a href="https://www.google.com" target="_blank">Google</a>.
-    </p>
-    <h2>Immagine di Esempio</h2>
-    <h3>Immagine 1</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Un'immagine di esempio" width="300" height="200">
-    <h3>Immagine 2</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Immagine 2" width="300" height="200"> <!-- Ridimensionata -->
-    <h3>Immagine 3</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Immagine 3" width="200" height="200"> <!-- Quadrata -->
-</html>
 
-    <h1>Benvenuto nella mia pagina</h1>
-    <div>
-        <p>
-            <span style="color: red;">span</span>
-        </p>
-    </div>
+    <header>
+        <h1>Benvenuto nella Pagina di Esempio</h1>
+    </header>
 
-    <div>
-        <p>
-            Questo è un altro paragrafo, separato dal primo.
-        </p>
-    </div>
+    <nav>
+        <a href="#sezione1">Sezione 1</a>
+        <a href="#sezione2">Sezione 2</a>
+        <a href="#sezione3">Sezione 3</a>
+        <a href="#form">Contatti</a>
+    </nav>
 
-    <div>
-        <p>
-            Un ulteriore paragrafo per mostrare la separazione dei contenuti.
-        </p>
-    </div>
+    <main>
+        <section id="sezione1">
+            <h2>Sezione 1: Articolo e Immagine</h2>
+            <article>
+                <h3>Un Interessante Argomento</h3>
+                <p>Questo è un articolo che tratta un argomento interessante. Le informazioni sono molto utili e pertinenti.</p>
+            </article>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Immagine di esempio" style="max-width: 100%; height: auto;">
+        </section>
 
-    <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Immagine 1">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Immagine 2">
-    </div>
+        <section id="sezione2">
+            <h2>Sezione 2: Testo Libero</h2>
+            <p>In questa sezione, puoi scrivere qualsiasi testo libero. Questo è un esempio di come puoi utilizzare lo spazio per esprimere le tue idee.</p>
+        </section>
 
-    <p>
-        Questo è un paragrafo di esempio.
-        <br><code>&lt;br&gt;</code>.<br>
-    </p>
-
-    <h2>Lista Ordinata</h2>
-    <ol>
-        <li>Primo elemento</li>
-        <li>Secondo elemento</li>
-        <li>Terzo elemento</li>
-    </ol>
-
-    <h2>Lista Non Ordinata</h2>
-    <ul>
-        <li>Elemento A</li>
-        <li>Elemento B</li>
-        <li>Elemento C</li>
-    </ul>
-
-    <h2>Lista Descrittiva</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language, il linguaggio di markup per le pagine web.</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets, usato per stilizzare le pagine web.</dd>
-        <dt>JavaScript</dt>
-        <dd>Un linguaggio di programmazione utilizzato per rendere le pagine web interattive.</dd>
-
-        <style>
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-            th, td {
-                border: 1px solid #000;
-                padding: 8px;
-                text-align: left;
-            }
-            th {
-                background-color: #f2f2f2;
-            }
-            tfoot {
-            background-color: #e9e9e9;
-            font-weight: bold;
-            }
-        </style>
-
-    </head>
-    <body>
-        <h2>Tabella Esempio</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Colonna 1</th>
-                    <th>Colonna 2</th>
-                    <th>Colonna 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Riga 1, Cell 1</td>
-                    <td>Riga 1, Cell 2</td>
-                    <td>Riga 1, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Riga 2, Cell 1</td>
-                    <td>Riga 2, Cell 2</td>
-                    <td>Riga 2, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Riga 3, Cell 1</td>
-                    <td>Riga 3, Cell 2</td>
-                    <td>Riga 3, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Riga 4, Cell 1</td>
-                    <td>Riga 4, Cell 2</td>
-                    <td>Riga 4, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Riga 5, Cell 1</td>
-                    <td>Riga 5, Cell 2</td>
-                    <td>Riga 5, Cell 3</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <aside>
-            <h2>Informazioni Utili</h2>
-            <p>Qui puoi trovare link e risorse interessanti:</p>
-            <ul>
-                <li><a href="https://www.example.com" target="_blank">Risorsa 1</a></li>
-                <li><a href="https://www.example.com" target="_blank">Risorsa 2</a></li>
-                <li><a href="https://www.example.com" target="_blank">Risorsa 3</a></li>
-            </ul>
-        </aside>
-    
-        <main>
-            <section>
-                <h2>Sezione 1: Introduzione</h2>
-                <p>Questa è la prima sezione del contenuto principale. Qui puoi trovare informazioni introduttive su vari argomenti.</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Immagine 1">
-            </section>
-    
-            <section>
-                <h2>Sezione 2: Approfondimenti</h2>
-                <p>In questa sezione, approfondiremo alcuni temi specifici, fornendo dettagli e spiegazioni aggiuntive.</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Immagine 2">
-            </section>
-
-            <section>
-                <h2>Sezione 3: Video di YouTube</h2>
-                <p>Guarda questo video interessante:</p>
-                <iframe src="https://youtu.be/-h7N_YRtDWw?si=wTwpm7Zi2EUwHHll" title="Video di esempio" allowfullscreen></iframe>
-            </section>
-
-            <section>
-                <h2>Icona SVG</h2>
-                <p>Ecco un esempio di un'icona SVG:</p>
-                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="lightblue" />
-                </svg>
-            </section>
-
-            <form action="https://example.com/submit-form" method="POST">
-            </form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
-        
-                <label for="cognome">Cognome:</label>
-                <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
-
-                <label for="email">Email:</label>
+        <section id="sezione3">
+            <h2>Sezione 3: Form di Contatto</h2>
+            <form action="#" method="post">
+                <label for="email">Indirizzo Email:</label>
                 <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
-        
-                <button type="submit">Registrati</button>
-        </main>
-    
-        <footer>
-            <p>&copy; 2024 Mariani Martin. Tutti i diritti riservati.</p>
-        </footer>
 
+                <p>Genere:</p>
+                <label>
+                    <input type="radio" name="genere" value="maschio" required> Maschio
+                </label>
+                <label>
+                    <input type="radio" name="genere" value="femmina" required> Femmina
+                </label>
+
+                <label>
+                    <input type="checkbox" name="termini" required> Accetto i termini e le condizioni
+                </label>
+                <label>
+                    <input type="checkbox" name="privacy" required> Accetto la privacy
+                </label>
+
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pagina web di Mariani Martin. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
 
 
 
